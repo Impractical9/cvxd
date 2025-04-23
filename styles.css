@@ -1,0 +1,185 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2980b9;
+}
+
+h1 {
+    color: #2c3e50;
+    margin: 1rem 0 0.5rem;
+    font-size: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Secciones principales */
+section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2980b9;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #2980b9;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Experiencia laboral */
+.job {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.job:last-child {
+    border-bottom: none;
+}
+
+.company, .institucion {
+    font-style: italic;
+    color: #555;
+    margin: 0.3rem 0;
+}
+
+.date {
+    color: #7f8c8d;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+/* Listas */
+ul {
+    padding-left: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Competencias */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.skills-column {
+    flex: 1;
+    min-width: 200px;
+    background: white;
+    padding: 1.2rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Certificaciones */
+.certifications-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.certifications-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.certifications-list li::before {
+    content: "▹";
+    color: #2980b9;
+    position: absolute;
+    left: 0;
+}
+
+/* Enlaces */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1a5276;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    
+    header {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .skills-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .skills-column {
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículum profesional de Jeisson Moncada, especialista en desarrollo web y gestión de proyectos tecnológicos">
+    <title>Currículum Vitae - Jeisson Moncada | Desarrollador Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css" as="style">
+</head>
+<body>
+    <header>
+        <img src="imagenes/ozunaklk.jpeg" alt="Foto de perfil de Jeisson Moncada" width="150" height="150">
+        <h1>Jeisson Moncada</h1>
+        <div class="contact-info">
+            <span>📧 <a href="mailto:jeissonmoncada13@gmail.com">jeissonmoncada13@gmail.com</a></span>
+            <span>📱 <a href="tel:+573132868789">313 286 8789</a></span>
+            <span>🔗 <a href="https://github.com/tuusuario" aria-label="Perfil de GitHub">GitHub</a></span>
+        </div>
+    </header>
+    
+    <main>
+        <section id="perfil" aria-labelledby="perfil-heading">
+            <h2 id="perfil-heading">Resumen Profesional</h2>
+            <p>Profesional con años de experiencia en programación web y gestión de proyectos. Especializado en desarrollo de estrategias digitales, análisis de datos y liderazgo de equipos multidisciplinarios. Orientado a resultados con demostrada capacidad para aumentar la eficiencia operacional.</p>
+        </section>
+
+        <section id="experiencia" aria-labelledby="experiencia-heading">
+            <h2 id="experiencia-heading">Experiencia Laboral</h2>
+            <article class="job">
+                <h3>Gerente de Proyectos Digitales</h3>
+                <p class="company">Programador full stack, ITSTK</p>
+                <p class="date">2024 - Presente</p>
+                <ul>
+                    <li>Lideré un equipo de desarrolladores y diseñadores en proyectos de transformación digital</li>
+                    <li>Gestioné presupuestos para proyectos tecnológicos</li>
+                    <li>Implementé metodologías ágiles que redujeron los tiempos de entrega en un 30%</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="formacion" aria-labelledby="formacion-heading">
+            <h2 id="formacion-heading">Formación Académica</h2>
+            <article class="education-item">
+                <h3>Análisis y desarrollo de software</h3>
+                <p class="institucion">SENA</p>
+                <p class="date">2023 - 2025</p>
+            </article>
+            <article class="education-item">
+                <h3>Ingeniería en sistemas</h3>
+                <p class="institucion">Universidad Simón Bolívar</p>
+                <p class="date">2025 - 2028</p>
+            </article>
+        </section>
+
+        <section id="competencias" aria-labelledby="competencias-heading">
+            <h2 id="competencias-heading">Competencias</h2>
+            <div class="skills-container">
+                <article class="skills-column">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>Español (Nativo)</li>
+                        <li>Inglés (B1 Intermedio)</li>
+                        <li>Portugués (A2 Bajo)</li>
+                    </ul>
+                </article>
+                <article class="skills-column">
+                    <h3>Tecnologías</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                    </ul>
+                </article>
+                <article class="skills-column">
+                    <h3>Habilidades Blandas</h3>
+                    <ul>
+                        <li>Liderazgo de equipos</li>
+                        <li>Comunicación efectiva</li>
+                        <li>Resolución de problemas</li>
+                        <li>Gestión del tiempo</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="certificaciones" aria-labelledby="certificaciones-heading">
+            <h2 id="certificaciones-heading">Certificaciones</h2>
+            <ul class="certifications-list">
+                <li>Google IT Automation with Python, 2024</li>
+                <li>Professional Cloud Developer - Google Cloud, 2024</li>
+                <li>Mobile Web Specialist - Google Developers, 2025</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        // Optimización de carga
+        if ('loading' in HTMLImageElement.prototype) {
+            document.querySelector('header img').loading = 'eager';
+        }
+        
+        // Carga diferida de CSS no crítico
+        const loadCSS = () => {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'styles.css';
+            document.head.appendChild(link);
+        };
+        
+        if (window.requestIdleCallback) {
+            window.requestIdleCallback(loadCSS);
+        } else {
+            window.addEventListener('load', loadCSS);
+        }
+    </script>
+</body>
+</html>
